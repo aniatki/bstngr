@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@theme {
+
+    --lightness: 75%;
+    --hue: 0.1;
+    --chroma: 40;
+
+    --color-primary: oklch(var(--lightness) var(--hue) var(--chroma));
+    --color-primary-dark: oklch(calc(var(--lightness) - 2%) var(--hue) var(--chroma));
+}
